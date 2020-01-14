@@ -5,7 +5,9 @@ def isPrime():
     a = int(input())
     if a > 0:
         def check_Prime(num):
-            if a == 1 or a == 2:
+            if a==1:
+              return False
+            elif a == 2:
                 return True
             else:
                 for i in range(2,math.ceil(a/2)+1):
